@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLApplications.Core", "src\MLApplications.Core\MLApplications.Core.csproj", "{F98B01CB-CECB-422A-ACA5-57938EDA40BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLApplications.Infrastructure", "src\MLApplications.Infrastructure\MLApplications.Infrastructure.csproj", "{7F346A87-E2D3-4A35-AE97-595140B443E4}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F98B01CB-CECB-422A-ACA5-57938EDA40BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98B01CB-CECB-422A-ACA5-57938EDA40BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98B01CB-CECB-422A-ACA5-57938EDA40BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98B01CB-CECB-422A-ACA5-57938EDA40BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
