@@ -7,3 +7,6 @@ A collection of web applications driven by machine learning built with ML.NET, A
 * Realtime Sentiment Analysis for customer comments or feedback (NLP)
 * Price prediction (Regression)
  
+# Resources
+## Dataset
+* [UC Irvine Machine Learning Repository - Sentiment Labelled Sentences Data Set](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences)
