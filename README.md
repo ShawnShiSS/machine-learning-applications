@@ -4,7 +4,7 @@
 A collection of real-world machine learning web applications built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React. 
 
 # Goal
-The goal is to provide a starting point for new machine learning applications. Please feel free to use any of the projects as a starting point for your next new application or add it to your existing application as a machine learning driven feature!
+The goal is to provide a starting point for new machine learning applications or features. Please feel free to use the repo to start your new application or add it to your existing application!
 
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
