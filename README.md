@@ -1,10 +1,15 @@
 ## Important Note: This repo is work in progress and is not ready for general release yet. Please watch the repo for updates.
 
 # Machine Learning Applications
-A collection of web applications driven by machine learning built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React.
+A collection of real-world machine learning web applications built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React. 
+
+# Goal
+The goal is to provide a starting point for new machine learning applications or features. 
+
+**Please feel free to use the repo to start your new application or add it to your existing application!**
 
 # Roadmap
-* Realtime Sentiment Analysis for customer comments or feedback (NLP)
+* Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
 * Price prediction (Regression)
  
 # Resources
