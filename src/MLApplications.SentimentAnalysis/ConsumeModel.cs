@@ -25,7 +25,7 @@ namespace MLApplications.SentimentAnalysis
 
             // Load model & create prediction engine
             string currentPath = Directory.GetCurrentDirectory();
-            // TODO : this path will not work at run time. Consider creating ConsumeModel at API level
+            // TODO : this path will not work at run time. Consider trained model path to this method
             string modelPath = @$"{currentPath}\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
