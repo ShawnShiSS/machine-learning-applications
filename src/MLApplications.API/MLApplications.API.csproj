@@ -8,5 +8,11 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MLApplications.Core\MLApplications.Core.csproj" />
+    <ProjectReference Include="..\MLApplications.Infrastructure\MLApplications.Infrastructure.csproj" />
+    <ProjectReference Include="..\MLApplications.SentimentAnalysis\MLApplications.SentimentAnalysis.csproj" />
+  </ItemGroup>
+
 
 </Project>

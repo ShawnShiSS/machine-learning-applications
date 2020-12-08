@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,7 @@ namespace MLApplications.API
     {
         public static void Main(string[] args)
         {
+            string tempPath = Directory.GetParent(typeof(Program).Assembly.Location).FullName;
             CreateHostBuilder(args).Build().Run();
         }
 
