@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Models\WebComment\" />
   </ItemGroup>
 
   <ItemGroup>
