@@ -61,6 +61,9 @@ namespace MLApplications.API
             // Swagger
             services.SetupNSwag();
 
+            // ML Models
+            services.AddSingleton<MLApplications.SentimentAnalysis.ConsumeModel>();
+
         }
 
         /// <summary>
