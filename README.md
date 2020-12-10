@@ -11,7 +11,12 @@ The goal is to provide a starting point for new machine learning applications or
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
 * Price prediction (Regression)
- 
+
+# Web app feature pages
+* Sentiment Analysis
+  * public page to submit feedback
+  * admin page to manage feedback and view sentiment
+
 # Resources
 ## Dataset
 * [UC Irvine Machine Learning Repository - Sentiment Labelled Sentences Data Set](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences)
