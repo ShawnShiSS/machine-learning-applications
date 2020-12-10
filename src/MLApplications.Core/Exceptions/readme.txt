@@ -1,0 +1,1 @@
+﻿This is where custom exceptions should reside.
