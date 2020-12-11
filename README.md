@@ -4,7 +4,7 @@ A collection of real-world machine learning web applications built with ML.NET, 
 # Goal
 The goal is to provide a starting point to build new machine learning applications or features. 
 
-**Please feel free to use the repo to start your new application or add it to your existing application!**
+**Please feel free to use the repo to kick start your next new application!**
 
 # Getting Started - API
 1. Download the Azure CosmosDB emulator in order to run the API project locally. Here is a download link: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator-release-notes#download.
