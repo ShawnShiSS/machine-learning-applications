@@ -1,3 +1,5 @@
+## NOTE: this repo is still work in progress and is not in perfect shape for general release yet. Please watch for updates.
+
 # Machine Learning Applications
 A collection of real-world machine learning web applications built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React. 
 
