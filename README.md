@@ -8,6 +8,15 @@ The goal is to provide a starting point for new machine learning applications or
 
 **Please feel free to use the repo to start your new application or add it to your existing application!**
 
+# Give a star
+:star: If you enjoy this project, or are using this project to start your exciting new project, please give it a star. Thanks! :star: 
+
+# Getting Started - API
+1. Download the Azure CosmosDB emulator in order to run the API project locally. Here is a download link: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator-release-notes#download.
+2. Start the emulator
+3. Set the API project as your Startup project in Visual Studio
+4. The swagger UI page should be loaded at: https://localhost:5001/swagger/index.html
+
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
 * Price prediction (Regression)
