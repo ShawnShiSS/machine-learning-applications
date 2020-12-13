@@ -1,12 +1,16 @@
-## Important Note: This repo is work in progress and is not ready for general release yet. Please watch the repo for updates.
+## NOTE: this repo is still work in progress and is not in perfect shape for general release yet. Please watch for updates.
 
 # Machine Learning Applications
 A collection of real-world machine learning web applications built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React. 
 
 # Goal
-The goal is to provide a starting point for new machine learning applications or features. 
+The goal is to provide a starting point to build new machine learning applications or features. 
 
-**Please feel free to use the repo to start your new application or add it to your existing application!**
+**Please feel free to use the repo to kick start your next new application!**
+
+# Getting Started - API
+1. Set the API project as your Startup project in Visual Studio
+1. The swagger UI page should be loaded at: https://localhost:5001/swagger/index.html
 
 # Give a star
 :star: If you enjoy this project, or are using this project to start your exciting new project, please give it a star. Thanks! :star: 
@@ -20,11 +24,7 @@ The goal is to provide a starting point for new machine learning applications or
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
 * Price prediction (Regression)
-
-# Web app feature pages
-* Sentiment Analysis
-  * public page to submit feedback
-  * admin page to manage feedback and view sentiment
+* More to come....
 
 # Resources
 ## Dataset
