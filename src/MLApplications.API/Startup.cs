@@ -78,8 +78,8 @@ namespace MLApplications.API
                 app.UseDeveloperExceptionPage();
 
                 // ONLY automatically create development database
-                app.EnsureCosmosDbIsCreated();
-                app.SeedApplicationData();
+                //app.EnsureCosmosDbIsCreated();
+                //app.SeedApplicationData();
                 
             }
 
