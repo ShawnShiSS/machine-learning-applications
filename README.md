@@ -15,7 +15,8 @@ The goal is to provide a starting point to build new machine learning applicatio
 
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
-* Price prediction (Regression)
+* Price prediction (Regression) - TODO
+* Time Series forecasting - TODO
 * More to come....
 
 # Resources
