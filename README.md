@@ -17,7 +17,7 @@ The goal is to provide a starting point to build new machine learning applicatio
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
 * Price prediction (Regression) - TODO
 * Time Series forecasting - TODO
-* Anomaly Detection in Time Series data - TODO
+* Anomaly Detection in Time Series data using ML.NET.TimeSeries - TODO
 * More to come....
 
 # Resources
