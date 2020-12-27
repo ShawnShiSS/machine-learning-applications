@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using MLApplications.API.Config;
 using System.Reflection;
 using Microsoft.Extensions.ML;
+using System.IO;
 
 namespace MLApplications.API
 {
@@ -54,10 +55,20 @@ namespace MLApplications.API
             // Swagger
             services.SetupNSwag();
 
-            // TODO : instead of using singleton instance, consider using a PredictionEngine pool
             // ML Models
-            services.AddSingleton<MLApplications.SentimentAnalysis.ConsumeModel>();
+            //services.AddSingleton<MLApplications.SentimentAnalysis.ConsumeModel>();
 
+            // Load model & create prediction engine
+            // Have to build the path: https://stackoverflow.com/questions/25419694/get-relative-file-path-in-a-class-library-project-that-is-being-referenced-by-a
+            var buildDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string modelPath = @$"{buildDir}\MLModel.zip";
+            
+            services.AddPredictionEnginePool<MLApplications.SentimentAnalysis.ModelInput,
+                                             MLApplications.SentimentAnalysis.ModelOutput>()
+                    .FromFile(modelName: "SentimentAnalysisModel", // ML model name, in order to support different ML models in API
+                              filePath: modelPath, // path to the MLModel.zip file
+                              watchForChanges: true // listens to the file system change and reload an updated model without taking the application down
+                    );
 
         }
 
