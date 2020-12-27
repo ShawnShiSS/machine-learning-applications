@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.ML;
 using MLApplications.SentimentAnalysis;
 using System;
 using System.Threading.Tasks;
@@ -12,15 +13,17 @@ namespace MLApplications.API.Controllers
     [ApiController]
     public class SentimentAnalysisController : ControllerBase
     {
-        private readonly ConsumeModel _consumeModel;
+        //private readonly ConsumeModel _consumeModel;
+        // Use a pool of prediction engines instead of one singleton instance
+        PredictionEnginePool<MLApplications.SentimentAnalysis.ModelInput, MLApplications.SentimentAnalysis.ModelOutput> _predictionEnginePool;
 
         /// <summary>
         ///     Controller ctor
         /// </summary>
         /// <param name="consumeModel"></param>
-        public SentimentAnalysisController(ConsumeModel consumeModel)
+        public SentimentAnalysisController(PredictionEnginePool<MLApplications.SentimentAnalysis.ModelInput, MLApplications.SentimentAnalysis.ModelOutput> predictionEnginePool)
         {
-            this._consumeModel = consumeModel ?? throw new ArgumentNullException(nameof(consumeModel));
+            this._predictionEnginePool = predictionEnginePool ?? throw new ArgumentNullException(nameof(predictionEnginePool));
         }
 
         // GET: api/SentimentAnalysis?comment=I love machine learning!
@@ -39,7 +42,7 @@ namespace MLApplications.API.Controllers
             };
 
             // Make a single prediction
-            var predictionResult = _consumeModel.Predict(sampleData);
+            var predictionResult = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: sampleData);
 
             return predictionResult;
         }
