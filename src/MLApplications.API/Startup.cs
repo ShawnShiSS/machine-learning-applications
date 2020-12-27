@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MLApplications.API.Config;
 using System.Reflection;
+using Microsoft.Extensions.ML;
 
 namespace MLApplications.API
 {
@@ -56,6 +57,7 @@ namespace MLApplications.API
             // TODO : instead of using singleton instance, consider using a PredictionEngine pool
             // ML Models
             services.AddSingleton<MLApplications.SentimentAnalysis.ConsumeModel>();
+
 
         }
 
