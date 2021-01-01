@@ -7,15 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplications.Core", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplications.Infrastructure", "src\MLApplications.Infrastructure\MLApplications.Infrastructure.csproj", "{7F346A87-E2D3-4A35-AE97-595140B443E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplicationsML.Model", "src\MLApplicationsML.Model\MLApplicationsML.Model.csproj", "{F83E2903-5F86-4000-88DE-A251995EA021}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplicationsML.ConsoleApp", "src\MLApplicationsML.ConsoleApp\MLApplicationsML.ConsoleApp.csproj", "{0A4DEAF2-3A3E-4CEE-BC37-F6542C21CDB1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplications.MLNetModelBuilder", "src\MLApplications.MLNetModelBuilder\MLApplications.MLNetModelBuilder.csproj", "{ADE7CA51-E62F-4001-B261-64EF80CB6653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLApplications.SentimentAnalysis", "src\MLApplications.SentimentAnalysis\MLApplications.SentimentAnalysis.csproj", "{E3C4BD5D-7AF8-459D-99D4-BB162B8C9B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplications.SentimentAnalysis", "src\MLApplications.SentimentAnalysis\MLApplications.SentimentAnalysis.csproj", "{E3C4BD5D-7AF8-459D-99D4-BB162B8C9B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLApplications.API", "src\MLApplications.API\MLApplications.API.csproj", "{9B2B6290-33A9-41C8-823D-204094686A46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApplications.API", "src\MLApplications.API\MLApplications.API.csproj", "{9B2B6290-33A9-41C8-823D-204094686A46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +27,6 @@ Global
 		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F346A87-E2D3-4A35-AE97-595140B443E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F83E2903-5F86-4000-88DE-A251995EA021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F83E2903-5F86-4000-88DE-A251995EA021}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F83E2903-5F86-4000-88DE-A251995EA021}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F83E2903-5F86-4000-88DE-A251995EA021}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A4DEAF2-3A3E-4CEE-BC37-F6542C21CDB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A4DEAF2-3A3E-4CEE-BC37-F6542C21CDB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A4DEAF2-3A3E-4CEE-BC37-F6542C21CDB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A4DEAF2-3A3E-4CEE-BC37-F6542C21CDB1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ADE7CA51-E62F-4001-B261-64EF80CB6653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ADE7CA51-E62F-4001-B261-64EF80CB6653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE7CA51-E62F-4001-B261-64EF80CB6653}.Release|Any CPU.ActiveCfg = Release|Any CPU
