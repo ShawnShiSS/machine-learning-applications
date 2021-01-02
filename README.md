@@ -1,5 +1,5 @@
 # Machine Learning Applications
-A collection of real-world machine learning web applications built with ML.NET, ASP.NET Core, Azure Cosmos DB, and React. 
+A collection of web API endpoints featuring machine learning, built with ML.NET, ASP.NET Core, Azure Cosmos DB. 
 
 # Goal
 The goal is to provide a starting point to build new machine learning applications or features. 
@@ -15,9 +15,10 @@ The goal is to provide a starting point to build new machine learning applicatio
 
 # Roadmap
 * Realtime Sentiment Analysis for comments and feedback (NLP, Binary Classification)
+* Spike detection in stock price (Time Series Anomaly Detection using ML.NET.TimeSeries)
 * Price prediction (Regression) - TODO
 * Time Series forecasting - TODO
-* Anomaly Detection in Time Series data using ML.NET.TimeSeries - TODO
+
 * More to come....
 
 # Resources
