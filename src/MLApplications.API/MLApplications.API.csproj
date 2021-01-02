@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\WebComment\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="FluentValidation" Version="9.3.0" />
@@ -18,6 +14,7 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
     <PackageReference Include="Microsoft.Extensions.ML" Version="1.5.4" />
+    <PackageReference Include="Microsoft.ML.TimeSeries" Version="1.5.4" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="NSwag.AspNetCore" Version="13.9.4" />
     <PackageReference Include="Serilog" Version="2.10.0" />
@@ -36,6 +33,12 @@
     <ProjectReference Include="..\MLApplications.Core\MLApplications.Core.csproj" />
     <ProjectReference Include="..\MLApplications.Infrastructure\MLApplications.Infrastructure.csproj" />
     <ProjectReference Include="..\MLApplications.SentimentAnalysis\MLApplications.SentimentAnalysis.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Datasets\intraday_5min_aapl.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 
