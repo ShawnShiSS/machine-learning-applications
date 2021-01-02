@@ -9,7 +9,7 @@ namespace MLApplications.AnomalyDetection
     {
         static readonly string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_aapl.csv");
         // assign the Number of records in dataset file to constant variable
-        const int _docsize = 100;
+        const int _docsize = 180;
 
         static void Main(string[] args)
         {
