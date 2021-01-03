@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.ML;
 using Microsoft.ML;
+using MLApplications.API.Models.AnomalyDetection;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using MLApplications.API.Models.AnomalyDetection;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace MLApplications.API.Controllers
 {
@@ -18,7 +17,7 @@ namespace MLApplications.API.Controllers
     {
 
         // Data file path and dataset size
-        private string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_aapl.csv");
+        private string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_TSLA.csv");
         // assign the Number of records in dataset file to constant variable
         private const int _docsize = 180;
 
@@ -27,7 +26,7 @@ namespace MLApplications.API.Controllers
         /// </summary>
         public AnomalyDetectionController() { }
 
-        // GET: api/AnomalyDetection/SpikeDetection?stock=APPL
+        // GET: api/AnomalyDetection/SpikeDetection?stock=TSLA
         /// <summary>
         ///     Return spike detection results
         /// </summary>
@@ -48,42 +47,21 @@ namespace MLApplications.API.Controllers
 
             // Spike detects pattern temporary changes
             return DetectSpike(mlContext, _docsize, dataView);
-
-
         }
 
         private IEnumerable<ModelOutput> DetectSpike(MLContext mlContext, int docSize, IDataView dataView)
         {
-            Console.WriteLine("Detect temporary changes in pattern");
-
             // STEP 2: Set the training algorithm
             var iidSpikeEstimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ModelOutput.Prediction), inputColumnName: nameof(ModelInput.Price), confidence: 95, pvalueHistoryLength: docSize / 4);
              
             // STEP 3: Create the transform
             // Create the spike detection transform
-            Console.WriteLine("=============== Training the model ===============");
             ITransformer iidSpikeTransform = iidSpikeEstimator.Fit(CreateEmptyDataView(mlContext));
 
-            Console.WriteLine("=============== End of training process ===============");
             //Apply data transformation to create predictions.
             IDataView transformedData = iidSpikeTransform.Transform(dataView);
 
             var predictions = mlContext.Data.CreateEnumerable<ModelOutput>(transformedData, reuseRowObject: false);
-
-            Console.WriteLine("Alert\tStock Price\tP-Value");
-
-            foreach (var p in predictions)
-            {
-                var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}";
-
-                if (p.Prediction[0] == 1)
-                {
-                    results += " <-- Spike detected";
-                }
-
-                Console.WriteLine(results);
-            }
-            Console.WriteLine("");
 
             return predictions;
         }
