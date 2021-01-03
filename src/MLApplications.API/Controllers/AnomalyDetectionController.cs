@@ -18,7 +18,7 @@ namespace MLApplications.API.Controllers
     {
 
         // Data file path and dataset size
-        private string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_aapl.csv");
+        private string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_TSLA.csv");
         // assign the Number of records in dataset file to constant variable
         private const int _docsize = 180;
 
