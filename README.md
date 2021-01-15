@@ -24,3 +24,4 @@ The goal is to provide a starting point to build new machine learning applicatio
 # Resources
 ## Dataset
 * [UC Irvine Machine Learning Repository - Sentiment Labelled Sentences Data Set](https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences)
+* [Alpha Vantage Stock Time Series](https://www.alphavantage.co/documentation/)
