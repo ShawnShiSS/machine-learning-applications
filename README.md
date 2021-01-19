@@ -18,7 +18,7 @@ The goal is to provide a starting point to build new machine learning applicatio
 * Spike detection in stock price (Time Series Anomaly Detection using ML.NET.TimeSeries)
 * Price prediction (Regression) - TODO
 * Time Series forecasting - TODO
-* .NET for Apache Spark integration
+* .NET for Apache Spark integration - TODO
 
 * More to come....
 
