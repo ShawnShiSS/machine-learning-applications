@@ -1,5 +1,5 @@
 # Machine Learning Applications
-A collection of web API endpoints featuring machine learning, built with ML.NET, ASP.NET Core, Azure Cosmos DB. 
+A collection of web API endpoints featuring machine learning, built with ML.NET, .NET for Apache Spark, ASP.NET Core, Azure Cosmos DB. 
 
 # Goal
 The goal is to provide a starting point to build new machine learning applications or features. 
