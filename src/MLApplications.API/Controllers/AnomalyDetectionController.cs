@@ -19,7 +19,7 @@ namespace MLApplications.API.Controllers
         // Data file path and dataset size
         private string _dataPath = Path.Combine(Environment.CurrentDirectory, "Datasets", "intraday_5min_TSLA.csv");
         // assign the Number of records in dataset file to constant variable
-        private const int _docsize = 180;
+        private const int _docsize = 79;
 
         /// <summary>
         ///     Controller ctor
@@ -62,6 +62,21 @@ namespace MLApplications.API.Controllers
             IDataView transformedData = iidSpikeTransform.Transform(dataView);
 
             var predictions = mlContext.Data.CreateEnumerable<ModelOutput>(transformedData, reuseRowObject: false);
+
+            Console.WriteLine("Alert\tStock Price\tP-Value");
+
+            foreach (var p in predictions)
+            {
+                var results = $"{p.Prediction[0]}\t{p.Prediction[1]:f2}\t{p.Prediction[2]:F2}";
+
+                if (p.Prediction[0] == 1)
+                {
+                    results += " <-- Spike detected";
+                }
+
+                Console.WriteLine(results);
+            }
+            Console.WriteLine("");
 
             return predictions;
         }
